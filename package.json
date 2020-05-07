@@ -1,0 +1,25 @@
+{
+  "name": "mohammad-amin-hesam.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mohammad-amin-hesam/mohammad-amin-hesam.github.io",
+  "author": "amin <singlepageprogrammer@gmail.com>",
+  "homepage": "https://mohammad-amin-hesam.github.io",
+  "license": "MIT",
+  "scripts": {
+    "predeploy": "npm run build",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "yarn run build && next export",
+    "deploy": "yarn export && touch out/.nojekyll && gh-pages -t -d out"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  },
+  "dependencies": {
+    "next": "^9.3.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
